@@ -9,5 +9,5 @@ const booksSchema = new Schema({
   imageURL: String
 });
 
-const Book = mongoose.model("Book", bookssSchema);
+const Book = mongoose.model("Book", booksSchema);
 module.exports = Book;
