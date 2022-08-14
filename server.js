@@ -16,8 +16,8 @@ app.get('/', (req,res) => {
     res.send('server is healthy');
 });
 
-const notesController = require('./controllers/book-controller');
-app.use('/books', notesController);
+const booksController = require('./controllers/book-controller');
+app.use('/books', booksController);
 
 app.get('*', (req,res) => {
     res.send('404');
