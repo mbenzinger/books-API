@@ -10,6 +10,8 @@ mongoose.connect(process.env.MONGO_URI, {
     console.log("Mongo connection Established")
 });
 const PORT = process.env.PORT
+const cors = require('cors')
+app.use(cors())
 
 
 app.get('/', (req,res) => {
